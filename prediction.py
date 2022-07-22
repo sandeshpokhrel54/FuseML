@@ -55,7 +55,7 @@ if st.button('Make Prediction'):
     inferred = model.predict(infer_on)
     print("final pred", np.round(np.squeeze(inferred, -1), decimals=3))
     # print("final pred", inferred)
-    st.write(f"The wine quality is: {np.round(np.squeeze(inferred, -1), decimals=3)*100} percent.")
+    st.write(f"Predicted wine quality with given features is: {np.round(np.squeeze(inferred, -1), decimals=3)*100} percent.")
     # st.write(f"The inferred wine quality is: {inferred}")
 
 
